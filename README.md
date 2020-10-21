@@ -8,17 +8,17 @@
 > 1. Make sure you have create a dir for docker mount, otherwize container will use docker volume as storage.
 > 2. If the dir you mounted already have some git repo, don't worry, [init script] will auto discove and import them.
 ### Without Auth
-Run following command to create a git server, **WITHOUT** authentication, with volume mounted, port binded, and git repo initialized.
+Run following command to create a git server, **WITHOUT** authentication, with volume mounted, port binded, and git repo initialized:
 
 `docker run -d --name tinygit -p 65530:80 -v /root/gitrepo:/git -e INIT_REPOS=myrepo tinygit`
 
 ### With Auth
-Run following command to create a git server, **WITH** authentication, with volume mounted, port binded, and git repo initialized.
+Run following command to create a git server, **WITH** authentication, with volume mounted, port binded, and git repo initialized:
 
 `docker run -d --name tinygit -p 65530:80 -v /root/gitrepo:/git -e INIT_REPOS=myrepo -e AUTH_ENABLE=true -e AUTH_USER=aliolozy -e AUTH_PASSWORD=a1i0LO2y tinygit`
 
 ### Git clone
-Run following command to clone the repo.
+Run following command to clone the repo:
 
 `git clone http://localhost:65530/git/myrepo`
 
