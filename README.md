@@ -10,12 +10,12 @@
 ### Without Auth
 Run following command to create a git server, **WITHOUT** authentication, with volume mounted, port binded, and git repo initialized:
 
-`docker run -d --name tinygit -p 65530:80 -v /root/gitrepo:/git -e INIT_REPOS=myrepo tinygit`
+`docker run -d --name tinygit -p 65530:80 -v /root/gitrepo:/git -e INIT_REPOS=myrepo aliolozy/tinygit`
 
 ### With Auth
 Run following command to create a git server, **WITH** authentication, with volume mounted, port binded, and git repo initialized:
 
-`docker run -d --name tinygit -p 65530:80 -v /root/gitrepo:/git -e INIT_REPOS=myrepo -e AUTH_ENABLE=true -e AUTH_USER=aliolozy -e AUTH_PASSWORD=a1i0LO2y tinygit`
+`docker run -d --name tinygit -p 65530:80 -v /root/gitrepo:/git -e INIT_REPOS=myrepo -e AUTH_ENABLE=true -e AUTH_USER=aliolozy -e AUTH_PASSWORD=a1i0LO2y aliolozy/tinygit`
 
 ### Git clone
 Run following command to clone the repo:
