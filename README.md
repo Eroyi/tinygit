@@ -1,8 +1,8 @@
 # Tinygit
-[Tinygit](https://github.com/AlioLozy/tinygit) provides a simple dockerized http git server on nginx, with auth options. Based on alpine.
+[`Tinygit`](https://github.com/AlioLozy/tinygit) provides an incredible tiny dockerized HTTP git server via Nginx, with auth options. Based on Alpine, mem usage lower than **1.5MB*, image 13.7MB compressed / 28.7Mb decompressed.
 
 # License
-[Tinygit](https://github.com/AlioLozy/tinygit) use [`SATA License (Star And Thank Author License)`](https://github.com/zTrix/sata-license), so you have to star this project before using. Read the LICENSE.txt carefully.
+[`Tinygit`](https://github.com/AlioLozy/tinygit) use [`SATA License (Star And Thank Author License)`](https://github.com/zTrix/sata-license), so you have to star this project before using. Read the LICENSE.txt carefully.
 
 # Usage
 > 1. Make sure you have create a dir for docker mount, otherwize container will use docker volume as storage.
