@@ -1,5 +1,5 @@
 # Tinygit
-[`Tinygit`](https://github.com/AlioLozy/tinygit) provides an incredible tiny dockerized HTTP git server via Nginx, with auth options. Based on Alpine, mem usage lower than **1.5MB*, image 13.7MB compressed / 28.7Mb decompressed.
+[`Tinygit`](https://github.com/AlioLozy/tinygit) provides an incredible tiny dockerized HTTP git server via Nginx, with auth options. Based on Alpine, mem usage lower than **1.5MB**, image **13.7MB** compressed / **28.7Mb** decompressed.
 
 # License
 [`Tinygit`](https://github.com/AlioLozy/tinygit) use [`SATA License (Star And Thank Author License)`](https://github.com/zTrix/sata-license), so you have to star this project before using. Read the LICENSE.txt carefully.
