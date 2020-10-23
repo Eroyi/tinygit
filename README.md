@@ -10,7 +10,7 @@
 > 3. Three `AUTH ENV` must be given at the same time, otherwise `[init script]` will not create the auth file. 
 
 ### ENV explain
-1. `INIT_REPOS`: Do or do not init any git repo. If this env value being given, init.sh will init a repo with name ${value}. If the dir you mounted already have some git repo, still `[init script]` will try to init the repo with the name you gave in ${value}, but **won't delete** any repo with the same name. 
+1. `INIT_REPOS`: Do or do not init any git repo. If this env value being given, [init script] will init a repo with name ${value}. If the dir you mounted already have some git repo, still `[init script]` will try to init the repo with the name you gave in ${value}, but **won't delete** any repo with the same name. 
 2. `AUTH_ENABLE`: Do or do not enable authentication. If this env value being given (*any value, just don't blank*) alongside with other 2 auth env value being given, `[init script]` will generate an auth file via `htpasswd`.
 2. `AUTH_USER`: The user name when authentication, If this env value and other 2 auth env being given, `[init script]` will generate an auth file via `htpasswd` with username ${value}
 3. `AUTH_PASSWORD`: The password when authentication, If this env value and other 2 auth env being given, `[init script]` will generate an auth file via `htpasswd` with password ${value}
