@@ -14,6 +14,7 @@
 2. `AUTH_ENABLE`: Do or do not enable authentication. If this env value being given (*any value, just don't blank*) alongside with other 2 auth env value being given, `[init script]` will generate an auth file via `htpasswd`.
 2. `AUTH_USER`: The user name when authentication, If this env value and other 2 auth env being given, `[init script]` will generate an auth file via `htpasswd` with username ${value}
 3. `AUTH_PASSWORD`: The password when authentication, If this env value and other 2 auth env being given, `[init script]` will generate an auth file via `htpasswd` with password ${value}
+
 ### Example: Without Auth
 Run the following command to create a git server, **WITHOUT** authentication, with a volume mounted, port bound, and git repo initialized:
 
